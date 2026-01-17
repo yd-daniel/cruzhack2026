@@ -12,7 +12,7 @@ typedef struct
 {
   float *buffer; // pointer to user-provided buffer
   size_t size;   // max number of elements
-  size_t index;  // current index in buffer
+  size_t index;  // index of the least recent element
   size_t count;  // number of valid elements
   float sum;     // running sum
 } RollingAverage;
@@ -34,7 +34,7 @@ void RollingAverage_addValue(RollingAverage *rollingAverage, float value);
 float RollingAverage_getAverage(const RollingAverage *rollingAverage);
 
 /**
- * Gets the array in order of most recent (index 0) to least recent (last index) elements
+ * Gets the array in order of least recent (index 0) to most recent (last index) elements
  * Writes to a provided buffer
  */
 void RollingAverage_getBuffer(const RollingAverage *rollingAverage, float *bufferOut);
