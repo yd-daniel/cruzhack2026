@@ -21,16 +21,11 @@ typedef struct {
 /**
  * Menu Templates
  */
-#include "../lib/Oled/menuXBMs/bar-chart-menu.h"
-extern const unsigned char BAR_CHART_XBM;
-#include "../lib/Oled/menuXBMs/summary-menu.h"
-extern const unsigned char SUMMARY_XBM;
-#include "../lib/Oled/menuXBMs/sleep-menu.h"
-extern const unsigned char SLEEP_XBM;
-#include "../lib/Oled/menuXBMs/decibelLevel.h"
-extern const unsigned char DECIBEL_XBM;
-#include "../lib/Oled/menuXBMs/warning.h"
-extern const unsigned char WARNING_XBM;
+extern const unsigned char BAR_CHART_XBM[1024];
+extern const unsigned char SUMMARY_XBM[1024];
+extern const unsigned char SLEEP_XBM[1024];
+extern const unsigned char DECIBEL_XBM[512];
+extern const unsigned char WARNING_XBM[1024];
 
 /**
  * Initialize the OLED UI state
