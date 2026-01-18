@@ -8,6 +8,10 @@
 
 #include <stddef.h> // for size_t
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 typedef struct
 {
   float *buffer; // pointer to user-provided buffer
@@ -38,5 +42,9 @@ float RollingAverage_getAverage(const RollingAverage *rollingAverage);
  * Writes to a provided buffer
  */
 void RollingAverage_getBuffer(const RollingAverage *rollingAverage, float *bufferOut);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif
