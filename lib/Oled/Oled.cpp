@@ -4,7 +4,7 @@
  * Defines oled data struct and oled menu options and functions
  */
 
-#include "oled.h"
+#include "Oled.h"
 #include <string.h>
 
 void drawBar(char *xbm, int barIndex, int barHeight);
