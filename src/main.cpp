@@ -3,8 +3,8 @@
 // ^ we could always just use a while loop
 
 //include our favorite headers
-#include "rollingAvg.h"
-#include "oled.h"
+#include "RollingAverage.h"
+#include "Oled.h"
 
 // put function declarations here:
 int myFunction(int, int);
